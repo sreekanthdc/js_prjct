@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+            <script type="text/javascript">
+                
+//                var input=Number(prompt("Enter 1st value"));
+                var n1=[1,2,3,4,5];
+                var n2=[2,3,1,0,5];
+//                var temp=0;
+//                    for(i=0;i<input;i++){
+//                    n1[i]=Number(prompt("Enter "+i+"Value"));
+//                    }
+//                var input1=Number(prompt("Enter 2nd Value"));
+//                    for(i=0;i<input;i++){
+//                        n2[i]=Number(prompt("Enter"+i+"Value"));
+//                    }
+                var len=n1.length;
+                var len1=n2.length;
+                    for(i=0;i<len;i++){
+                        count=0;
+                        for(j=0;j<len1;j++){
+                            if(n1[i]!=n2[j]){
+                                count++;
+                                }}
+                            if(count==len){
+                                document.write(n1[i]);
+                            }
+                        }
+                    
+//                document.write(temp);
+            </script>
+    </head>
+    <body>
+    </body>
+</html>

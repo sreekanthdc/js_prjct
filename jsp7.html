@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Second Largest Number</title>    
+    <script type="text/javascript">
+    input=Number(prompt("Enter Value"));
+       var temp=[];
+        
+        for(i=0;i<input;i++){
+            temp[i]=Number(prompt("Enter " +i+ "value"));                    
+        }
+        document.write(temp);
+                for(j=0;j<input;j++){
+                    for(k=j+1;k<input;k++){
+                        if(temp[j]<temp[k]){
+                            var s=temp[j];
+                            temp[j]=temp[k];
+                            temp[k]=s;
+                        }
+                    }
+                }
+
+        document.write("<br>Second Largest Number:"+temp[1]);
+             
+            
+            
+    </script>
+</head>
+</html>

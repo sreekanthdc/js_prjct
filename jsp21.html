@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+        var first = prompt("enter the string");
+        var second = prompt("enter the second string");
+        n1 = first.length;
+        n2 = second.length;
+
+        if (n1 != n2) {
+            document.write("is not anagram");
+        } 
+        else {
+            for (i = 0; i < n1; i++) {
+                count = 0;
+
+                for (j = 0; j < n2; j++) {
+
+                    if (first[i] == second[j]) {
+
+                        count++;
+                    }
+                }
+            }
+            if (count > 0) {
+                document.write("an anagram");
+            } 
+            else {
+                document.write("not an anagram");
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
